@@ -1,0 +1,7 @@
+ C'est un proto : On fait du fonctionnel, pas de la qualité !!
+ 
+ - une room reseau très simpliste
+ - 3C du FPS
+ - 3C du STR
+ - Sync des position network
+ - Drag and drop du perso depuis la STR qui après validation déplace le joueur en VR.
