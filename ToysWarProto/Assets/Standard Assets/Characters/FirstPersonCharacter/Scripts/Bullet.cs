@@ -6,12 +6,20 @@ public class Bullet : MonoBehaviour
 
 	void Start()
 	{
-		Destroy(gameObject, 1);
+		Destroy(gameObject, 2);
 	}
 
 	void Update ()
 	{
 		transform.position += transform.up * Time.deltaTime * 20;
+	}
+
+	void OnTriggerEnter(Collider collider)
+	{
+		if (collider.tag == "Enemy") {
+			Destroy(collider.gameObject);
+			Destroy(gameObject);
+		}
 	}
 
 }

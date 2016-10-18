@@ -6,6 +6,12 @@ public class Weapon : MonoBehaviour
 	[SerializeField]
 	private GameObject bulletPrefab;
 
+	private Transform spawnPoint;
+
+	void Start()
+	{
+		spawnPoint = transform.FindChild("Spawn");
+	}
 
 	void Update ()
 	{
@@ -16,7 +22,7 @@ public class Weapon : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			Instantiate(bulletPrefab, transform.position, transform.rotation);
+			Instantiate(bulletPrefab, spawnPoint.transform.position, transform.rotation);
 		}
 	}
 
