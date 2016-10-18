@@ -10,4 +10,4 @@
  "avancé" lol:
  - tir
  - ennemi fixes car on sait pas viser des cibles mouvantes
- 
+ - Cubes décoratifs vert en STR et rouge en VR (par exemple)
